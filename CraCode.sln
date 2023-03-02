@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1831
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraCode.WebLayer", "CraCode.WebLayer\CraCode.WebLayer.csproj", "{7BD12E30-F7A5-4AC7-A588-49895B6EA6F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraCode.ModelLayer", "CraCode.ModelLayer\CraCode.ModelLayer.csproj", "{1AAD11A5-53FB-4AB6-8B51-DE74E65EE252}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7BD12E30-F7A5-4AC7-A588-49895B6EA6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BD12E30-F7A5-4AC7-A588-49895B6EA6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BD12E30-F7A5-4AC7-A588-49895B6EA6F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AAD11A5-53FB-4AB6-8B51-DE74E65EE252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AAD11A5-53FB-4AB6-8B51-DE74E65EE252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AAD11A5-53FB-4AB6-8B51-DE74E65EE252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AAD11A5-53FB-4AB6-8B51-DE74E65EE252}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
