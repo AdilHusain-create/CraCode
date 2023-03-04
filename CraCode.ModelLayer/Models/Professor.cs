@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace CraCode.ModelLayer.Models
 {
-    class Professor
+    public class Professor : BaseModel
     {
+        
+        public string experienceInYears { get; set; }
+        public string expertise { get; set; }
     }
 }

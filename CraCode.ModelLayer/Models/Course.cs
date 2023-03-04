@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace CraCode.ModelLayer.Models
 {
-    class Course
+    public class Course
     {
+        public int ID { get; set; }
+        public string courseName { get; set; }
+        public string type { get; set; }
+        public Professor professor { get; set; }
+
+
     }
 }
