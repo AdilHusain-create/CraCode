@@ -23,7 +23,7 @@ namespace CraCode.WebLayer
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-pulse.css",
                       "~/Content/site.css"));
         }
     }

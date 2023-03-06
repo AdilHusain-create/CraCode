@@ -13,5 +13,6 @@ namespace CraCode.ModelLayer.Models
         public string profession { get; set; }
         public Course course { get; set; }
         public Professor professor { get; set; }
+        public string Password { get; set; }
     }
 }

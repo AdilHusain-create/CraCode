@@ -1,0 +1,36 @@
+﻿@model CraCode.ModelLayer.Models.Student
+@{
+    /**/
+
+    ViewBag.Title = "StudentRegister";
+}
+
+<h2> Register Student</h2>
+<br />
+
+@using (Html.BeginForm("StudentRegister", "Account"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.firstName)
+        @Html.TextBoxFor(m => m.firstName, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.lastName)
+        @Html.TextBoxFor(m => m.lastName, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.emailAddress)
+        @Html.TextBoxFor(m => m.emailAddress, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Password)
+        @Html.PasswordFor(m => m.Password ,new { @class = "form-control" })
+    </div>
+
+
+
+
+}
