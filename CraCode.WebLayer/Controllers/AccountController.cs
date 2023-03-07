@@ -8,12 +8,18 @@ namespace CraCode.WebLayer.Controllers
 {
     public class AccountController : Controller
     {
-        // GET: Account
-        public ActionResult Index()
+
+        public ActionResult  StudentRegister()
         {
             return View();
         }
-        public ActionResult  StudentRegister()
+
+        public ActionResult ProfessorRegister()
+        {
+            return View();
+        }
+
+        public ActionResult CompanyRegister()
         {
             return View();
         }

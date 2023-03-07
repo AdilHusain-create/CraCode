@@ -1,4 +1,6 @@
-﻿@{
+﻿@using System.Reflection
+@using CraCode.WebLayer.Controllers
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -8,4 +10,9 @@
 
 <h1> Learn Without </h1>
 <h1>Limits</h1>
-
+<hr/>
+@Html.ActionLink("Are You A Student? Join Us Free", "StudentRegister", "Account")
+<br/>
+@Html.ActionLink("Are You A Professor ?", "ProfessorRegister", "Account")
+<br />
+@Html.ActionLink("Are You A Company ?", "CompanyRegister","Account")
