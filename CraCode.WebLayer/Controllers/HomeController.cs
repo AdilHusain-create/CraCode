@@ -13,6 +13,13 @@ namespace CraCode.WebLayer.Controllers
             return View();
         }
 
+        public ActionResult Explore()
+        {
+            ViewBag.Message = "Your Explore page.";
+
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
