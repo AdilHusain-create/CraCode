@@ -1,77 +1,29 @@
 ﻿@using System.Reflection
 @using CraCode.WebLayer.Controllers
+@using CraCode.WebLayer.CustomHelpers
 @{
-    ViewBag.Title = "Home Page";
+
 }
 
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#ecbe35;">
-    <a class="navbar-brand" href="#">
-        <img src="fav.icon.jpg" height="40">
+@Html.Partial("_NavBarPartialView")
 
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+@using (Html.BeginForm("StudentLogin", "Account", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
 
-            <!--NavBar dropdown "Explore"-->
-            <li class="nav-item dropdown" cla>
-                <a class="nav-link dropdown-toggle" href="#"
-                   id="navbarDropdown"
-                   role="button"
-                   data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    Explore
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#cdcac3;">
-                    <a class="dropdown-item" href="#">Frontend Development</a>
-                    <a class="dropdown-item" href="#">Backend Development</a>
-                    <a class="dropdown-item" href="#">Programming languages</a>
-                    <a class="dropdown-item" href="#">Computer Science</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">AI And ML</a>
-                    <a class="dropdown-item" href="#">BlockChain</a>
-                    <a class="dropdown-item" href="#">Ethical Hacking</a>
-                </div>
-            </li>
-            <!--NavBar dropdown "For Professor"-->
-            <li class="nav-item">
-                <a class="nav-link" href="#">For Professor</a>
-            </li>
-            <!--NavBar dropdown "For University"-->
-            <li class="nav-item">
-                <a class="nav-link" href="#">For University</a>
-            </li>
-            <!--NavBar dropdown "For Company"-->
-            <li class="nav-item">
-                <a class="nav-link" href="#">For Company</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-        </form>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Username)
+        @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
     </div>
-</nav>
 
+    <div class="form-group">
+        @Html.LabelFor(m => m.Password)
+        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+    </div>
 
+    <button type="submit" class="btn btn-primary">Login</button>
+}
 
-<@*h3>Explore</h3>
-
-<text> Here the main content of page will be displayed</text>
-
-<h1> Learn Without </h1>
-<h1>Limits</h1>
-<hr />
-@Html.ActionLink("Are You A Student? Join Us Free", "StudentRegister", "Account")
-<br />
-@Html.ActionLink("Are You A Professor ?", "ProfessorRegister", "Account")
-<br />
-@Html.ActionLink("Are You A Company ?", "CompanyRegister", "Account")*@
-
-
-
-@Styles.Render("~/Content/index.css")

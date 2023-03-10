@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Optimization;
+using System.Web.UI.WebControls;
 
 namespace CraCode.WebLayer
 {
@@ -23,8 +24,8 @@ namespace CraCode.WebLayer
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap-pulse.css",
-                      "~/Content/site.css"));
+                         "~/Content/bootstrap.css",
+                         "~/Content/bootstrap.min.css"));
         }
     }
 }
