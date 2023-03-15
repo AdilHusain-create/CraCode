@@ -1,50 +1,56 @@
-﻿@using CraCode.WebLayer.CustomHelpers
+﻿@media
 
-<nav class="navbar navbar-expand-lg" style="background-color:#ecbe35;">
-    <div class="container-fluid" bis_skin_checked="1">
-        <div>
-            @Html.ImageActionLink("Link Display Text", "Index", "Home",
-                null, null, "~/fav.icon.jpg")
-        </div>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" bis_skin_checked="1">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Explore
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>@Html.ActionLink("Computer Science", "ComputerScience", "Explore")</li>
-                        <li @Html.ActionLink("Frontend Development", "FrontEndDev", "Explore")></li>
-                        <li @Html.ActionLink("Backend Development", "BackEndDev", "Explore")></li>
-                        <li @Html.ActionLink("Programming Languages ", "ProgrammingLan", "Explore")></li>
-                        <li @Html.ActionLink("AI & ML", "AiAndMl", "Explore")></li>
-                        <li @Html.ActionLink("University Courses", "UniCourse", "Explore")></li>
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                    </ul>
-                </li>
-                <li class="nav-item " class="nav-link active" aria-current="page">
-                    @Html.ActionLink("For Professor", "ProfessorLogin", "Account")
-                </li>
-                <li class="nav-item m-lg-5" class="nav-link active" aria-current="page">
-                    @Html.ActionLink("For University", "UniversityLogin", "Account")
-                </li>
-                <li class="nav-item" class="nav-link active" aria-current="page">
-                    @Html.ActionLink("For  Company", "CompanyLogin", "Account")
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-        </div>
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+
+        </ul>
+        <!-- Links -->
+
+        <form class="form-inline">
+            <div class="md-form my-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+        </form>
     </div>
+    <!-- Collapsible content -->
+
 </nav>
+<!--/.Navbar-->

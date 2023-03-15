@@ -29,5 +29,7 @@ namespace CraCode.WebLayer.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<CraCode.ModelLayer.Models.Student> Students { get; set; }
     }
 }

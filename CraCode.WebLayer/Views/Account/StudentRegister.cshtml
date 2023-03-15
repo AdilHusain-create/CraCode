@@ -6,31 +6,109 @@
 }
 
 <h2> Register Student</h2>
-<br />
+<hr />
 
 @using (Html.BeginForm("StudentRegister", "Account"))
 {
-    <div class="form-group">
-        @Html.LabelFor(m => m.firstName)
-        @Html.TextBoxFor(m => m.firstName, new { @class = "form-control" })
+    <div class="row">
+        <div class="form-check-inline col-md-3">
+            @Html.LabelFor(m => m.FirstName)
+            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+        </div>
+        <div class="form-check-inline col-md-3">
+            @Html.LabelFor(m => m.LastName)
+            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+        </div>
     </div>
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.lastName)
-        @Html.TextBoxFor(m => m.lastName, new { @class = "form-control" })
+    <br />
+
+    <div class="row">
+        <div class="form-check-inline col-md-3">
+            @Html.LabelFor(m => m.EmailAddress)
+            @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control" })
+        </div>
+        <div class="form-check-inline col-md-3">
+            @Html.LabelFor(m => m.MobileNumber)
+            @Html.TextBoxFor(m => m.MobileNumber, new { @class = "form-control" })
+        </div>
     </div>
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.emailAddress)
-        @Html.TextBoxFor(m => m.emailAddress, new { @class = "form-control" })
+    <br />
+
+    <div class="row">
+        <div class="form-check-inline col-md-3">
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-control">
+
+                @Html.LabelFor(model => model.DateOfBirth, htmlAttributes: new { @class = "form-label " })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.DateOfBirth, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DateOfBirth, "", new { @class = "text-danger" })
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container form-check-inline col-md-3">
+            <div class="dropdown">
+                <button type="button" class="btn btn-warning dropdown-toggle" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Gender
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Male</a>
+                    <a class="dropdown-item" href="#">Female action</a>
+                    <a class="dropdown-item" href="#">Prefer Not To Say</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="form-group">
+    <br/>
+
+    <div class="row">
+        <div class="form-check-inline col-md-3">
+            @Html.LabelFor(m => m.Country)
+            @Html.TextBoxFor(m => m.Country, new { @class = "form-control" })
+        </div>
+        
+        <div class="form-check-inline col-md-3">
+            @Html.LabelFor(m => m.State)
+            @Html.TextBoxFor(m => m.State, new { @class = "form-control" })
+        </div>
+		
+        <div class="form-check-inline col-md-3">
+            @Html.LabelFor(m => m.City)
+            @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="form-check-inline col-md-3">
+            @Html.LabelFor(m => m.Qualification)
+            @Html.TextBoxFor(m => m.Qualification, new { @class = "form-control" })
+        </div>
+        
+        <div class="form-check-inline col-md-3">
+            @Html.LabelFor(m => m.College)
+            @Html.TextBoxFor(m => m.College, new { @class = "form-control" })
+        </div>
+		
+        <div class="form-check-inline col-md-3">
+            @Html.LabelFor(m => m.Profession)
+            @Html.TextBoxFor(m => m.Profession, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <br />
+
+    <div class="form-check-inline col-md-3">
         @Html.LabelFor(m => m.Password)
-        @Html.PasswordFor(m => m.Password ,new { @class = "form-control" })
+        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
     </div>
-
-
-
 
 }

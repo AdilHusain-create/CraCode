@@ -9,7 +9,7 @@ namespace CraCode.ModelLayer.Models
     public class Professor : BaseModel
     {
         
-        public string experienceInYears { get; set; }
-        public string expertise { get; set; }
+        public string ExperienceInYears { get; set; }
+        public string Expertise { get; set; }
     }
 }

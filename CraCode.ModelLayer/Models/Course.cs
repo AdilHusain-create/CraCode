@@ -8,10 +8,10 @@ namespace CraCode.ModelLayer.Models
 {
     public class Course
     {
-        public int ID { get; set; }
-        public string courseName { get; set; }
-        public string type { get; set; }
-        public Professor professor { get; set; }
+        public int Id { get; set; }
+        public string CourseName { get; set; }
+        public string Type { get; set; }
+        public Professor Professor { get; set; }
 
 
     }
