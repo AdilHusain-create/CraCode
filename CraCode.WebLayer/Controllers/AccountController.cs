@@ -45,5 +45,10 @@ namespace CraCode.WebLayer.Controllers
         {
             return View();
         }
+
+        public ActionResult ForgetPassword()
+        {
+            return View("_ForgetPassword");
+        }
     }
 }

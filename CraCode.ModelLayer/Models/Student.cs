@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -22,6 +23,10 @@ namespace CraCode.ModelLayer.Models
         public Course Course { get; set; }
 
         public Professor Professor { get; set; }
+
+        [Required]
+        [DisplayName("Get Updates to New Courses")]
+        public bool GetUpdateFlag { get; set; }
 
         [Required(ErrorMessage = "Please enter Correct Password")]
         public string Password { get; set; }

@@ -71,6 +71,22 @@
     <Compile Include="Migrations\202303121119186_RenameStudentModelProperties.Designer.cs">
       <DependentUpon>202303121119186_RenameStudentModelProperties.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303171804010_AddGetUpdatePropertyInStudentModel.cs" />
+    <Compile Include="Migrations\202303171804010_AddGetUpdatePropertyInStudentModel.Designer.cs">
+      <DependentUpon>202303171804010_AddGetUpdatePropertyInStudentModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303171831297_updateRetunTypeOfGetUpdatePropertyInStudentModelAndDBName.cs" />
+    <Compile Include="Migrations\202303171831297_updateRetunTypeOfGetUpdatePropertyInStudentModelAndDBName.Designer.cs">
+      <DependentUpon>202303171831297_updateRetunTypeOfGetUpdatePropertyInStudentModelAndDBName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303171838517_updateRetunTypeOfGetUpdatePropertyInStudentModel.cs" />
+    <Compile Include="Migrations\202303171838517_updateRetunTypeOfGetUpdatePropertyInStudentModel.Designer.cs">
+      <DependentUpon>202303171838517_updateRetunTypeOfGetUpdatePropertyInStudentModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303171844413_updateRetunTypeOfGetUpdatePropertyInStudentModel1.cs" />
+    <Compile Include="Migrations\202303171844413_updateRetunTypeOfGetUpdatePropertyInStudentModel1.Designer.cs">
+      <DependentUpon>202303171844413_updateRetunTypeOfGetUpdatePropertyInStudentModel1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -99,6 +115,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303121119186_RenameStudentModelProperties.resx">
       <DependentUpon>202303121119186_RenameStudentModelProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303171804010_AddGetUpdatePropertyInStudentModel.resx">
+      <DependentUpon>202303171804010_AddGetUpdatePropertyInStudentModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303171831297_updateRetunTypeOfGetUpdatePropertyInStudentModelAndDBName.resx">
+      <DependentUpon>202303171831297_updateRetunTypeOfGetUpdatePropertyInStudentModelAndDBName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303171838517_updateRetunTypeOfGetUpdatePropertyInStudentModel.resx">
+      <DependentUpon>202303171838517_updateRetunTypeOfGetUpdatePropertyInStudentModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303171844413_updateRetunTypeOfGetUpdatePropertyInStudentModel1.resx">
+      <DependentUpon>202303171844413_updateRetunTypeOfGetUpdatePropertyInStudentModel1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
