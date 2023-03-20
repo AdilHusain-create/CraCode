@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraCode.ModelLayer", "CraCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraCode.DBLayer", "CraCode.DBLayer\CraCode.DBLayer.csproj", "{4CFE57A2-FF3B-4C33-B651-70627223E64D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraCode.ServicesLayer", "CraCode.ServicesLayer\CraCode.ServicesLayer.csproj", "{5D197180-64FF-4CCE-84E6-00AD5EB18AB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4CFE57A2-FF3B-4C33-B651-70627223E64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CFE57A2-FF3B-4C33-B651-70627223E64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CFE57A2-FF3B-4C33-B651-70627223E64D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D197180-64FF-4CCE-84E6-00AD5EB18AB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D197180-64FF-4CCE-84E6-00AD5EB18AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D197180-64FF-4CCE-84E6-00AD5EB18AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D197180-64FF-4CCE-84E6-00AD5EB18AB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
