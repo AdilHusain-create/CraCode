@@ -67,13 +67,14 @@
             @Html.TextBoxFor(m => m.Password, new { @class = "form-control" })
         </div>
         <div class="form-check-inline col-md-3">
-            @Html.CheckBoxFor(m => m.GetUpdateFlag, new { @checked = "checked" })
-            @Html.LabelFor(m => m.GetUpdateFlag)
+            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+            <label class="form-check-label" for="form2Example3">
+                I Agree to Terms and Conditions
+            </label>
         </div>
     </div>
     <br />
-
     <!-- Submit button -->
-    <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+    <button type="submit" class="btn btn-primary btn-group mb-4">Sign up</button>
 
 }

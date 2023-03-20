@@ -200,6 +200,11 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Photos\Home\Main Page 1.jpg" />
+    <Content Include="Photos\Home\Mainpage - CSharp.jpg" />
+    <Content Include="Photos\Home\MainPage - JS.jpg" />
+    <Content Include="Photos\Home\MainPage - Python.jpg" />
+    <Content Include="Photos\Home\MianPage - Java.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
