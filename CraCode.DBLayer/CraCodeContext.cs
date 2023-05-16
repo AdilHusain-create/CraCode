@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using CraCode.ModelLayer.Models;
 //using System.Data.SqlClient;
 
@@ -22,5 +17,7 @@ namespace CraCode.DBLayer
         public DbSet<Professor> Professors { get; set; }
 
         public DbSet<Course> Courses { get; set; }
+
+        public DbSet<Credentials> Credentials { get; set; }
     }
 }

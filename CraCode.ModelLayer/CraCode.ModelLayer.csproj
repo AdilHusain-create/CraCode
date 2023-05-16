@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\Credentials.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Professor.cs" />
     <Compile Include="Models\Student.cs" />

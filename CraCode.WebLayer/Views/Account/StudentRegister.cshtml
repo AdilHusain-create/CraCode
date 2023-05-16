@@ -1,80 +1,100 @@
 ﻿@model CraCode.ModelLayer.Models.Student
 @{
-    /**/
-
     ViewBag.Title = "StudentRegister";
 }
-<br/>
-<hr />
-<h2> Register Student</h2>
-<hr />
 
-@using (Html.BeginForm("StudentRegister", "Account"))
-{
-    <!-- Quick Register buttons -->
-    <div class="text-md-start">
-        <p>or sign up with:</p>
-        <button type="button" class="btn btn-secondary btn-floating mx-1">
-            <i class="fab fa-facebook-f"></i>
-        </button>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-        <button type="button" class="btn btn-secondary btn-floating mx-1">
-            <i class="fab fa-google"></i>
-        </button>
+<br />
+<br />
+<br />
+<br />
+<br />
 
-        <button type="button" class="btn btn-secondary btn-floating mx-1">
-            <i class="fab fa-twitter"></i>
-        </button>
+<div class="">
+    <hr />
+    <h2> Register Student</h2>
+    <hr />
 
-        <button type="button" class="btn btn-secondary btn-floating mx-1">
-            <i class="fab fa-github"></i>
-        </button>
-    </div>
+    @using (Html.BeginForm("StudentRegister", "Account", FormMethod.Post))
+    {
+        <!-- Quick Register buttons -->
+        <div class="text-md-start">
+            <p>or sign up with:</p>
+            <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+            </button>
 
-    <br />
+            <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-google"></i>
+            </button>
 
-    <!-- 2 column grid layout with text inputs for the first and last names -->
-     <div class="row">
-        <div class="form-check-inline col-md-3">
-            @Html.LabelFor(m => m.FirstName)
-            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+            <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+            </button>
+
+            <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-github"></i>
+            </button>
         </div>
-        <div class="form-check-inline col-md-3">
-            @Html.LabelFor(m => m.LastName)
-            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
-        </div>
-    </div>
 
-    <br />
+        <br />
 
-    <!-- Email input And Mobile No input-->
-    <div class="row">
-        <div class="form-check-inline col-md-3">
-            @Html.LabelFor(m => m.EmailAddress)
-            @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control" })
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row">
+            <div class="form-check-inline col-md-3">
+                @Html.LabelFor(m => m.FirstName)
+                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+            </div>
+            <div class="form-check-inline col-md-3">
+                @Html.LabelFor(m => m.LastName)
+                @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+            </div>
         </div>
-        <div class="form-check-inline col-md-3">
-            @Html.LabelFor(m => m.MobileNumber)
-            @Html.TextBoxFor(m => m.MobileNumber, new { @class = "form-control" })
-        </div>
-    </div>
 
-    <br />
-    <!-- Password input And Checkbox -->
-    <div class="row">
-        <div class="form-check-inline col-md-3">
-            @Html.LabelFor(m => m.Password)
-            @Html.TextBoxFor(m => m.Password, new { @class = "form-control" })
-        </div>
-        <div class="form-check-inline col-md-3">
-            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
-            <label class="form-check-label" for="form2Example3">
-                I Agree to Terms and Conditions
-            </label>
-        </div>
-    </div>
-    <br />
-    <!-- Submit button -->
-    <button type="submit" class="btn btn-primary btn-group mb-4">Sign up</button>
+        <br />
 
-}
+        <!-- Email input And Mobile No input-->
+        <div class="row">
+            <div class="form-check-inline col-md-3">
+                @Html.LabelFor(m => m.EmailAddress)
+                @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control" })
+            </div>
+            <div class="form-check-inline col-md-3">
+                @Html.LabelFor(m => m.MobileNumber)
+                @Html.TextBoxFor(m => m.MobileNumber, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <br />
+        <!-- Password input and Confirm Password -->
+        <div class="row">
+            <div class="form-check-inline col-md-3">
+                @Html.LabelFor(m => m.Password)
+                @Html.TextBoxFor(m => m.Password, new { @class = "form-control" })
+            </div>
+
+            <div class="form-check-inline col-md-3">
+                @Html.LabelFor(m => m.ConfirmPassword)
+                @Html.TextBoxFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            </div>
+
+        </div>
+        <br />
+
+        <!-- Get Update Checkbox -->
+        <div class="row">
+            <div class="form-check-inline col-md-3">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" name="GetUpdateFlag" />
+                <label class="form-check-label" for="form2Example3">
+                    @Html.LabelFor(m => m.GetUpdateFlag)
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <!-- Submit button -->
+        <button type="submit" class="get-started-btn">Sign up</button>
+
+    }
+</div>

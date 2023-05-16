@@ -28,7 +28,11 @@ namespace CraCode.ModelLayer.Models
         [DisplayName("Get Updates to New Courses")]
         public bool GetUpdateFlag { get; set; }
 
-        [Required(ErrorMessage = "Please enter Correct Password")]
+        [Required(ErrorMessage = "This Field is Required")]
         public string Password { get; set; }
+
+        [Compare("Password")]
+        [DisplayName("Confirm Password")]
+        public string ConfirmPassword { get; set; }
     }
 }
