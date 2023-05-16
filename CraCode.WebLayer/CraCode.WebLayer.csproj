@@ -463,6 +463,7 @@
     <Content Include="Views\Shared\_Navbar.cshtml" />
     <Content Include="Views\Account\_ForgetPassword.cshtml" />
     <Content Include="Views\Account\StudentLogin.cshtml" />
+    <Content Include="Views\Home\Trainer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CraCode.ModelLayer\CraCode.ModelLayer.csproj">

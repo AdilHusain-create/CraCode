@@ -33,5 +33,12 @@ namespace CraCode.WebLayer.Controllers
 
             return View();
         }
+
+        public ActionResult Trainer()
+        {
+            ViewBag.Message = "Trainer's page.";
+
+            return View();
+        }
     }
 }
