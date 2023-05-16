@@ -241,6 +241,10 @@
     <Content Include="Content\assets\img\testimonials\testimonials-3.jpg" />
     <Content Include="Content\assets\img\testimonials\testimonials-4.jpg" />
     <Content Include="Content\assets\img\testimonials\testimonials-5.jpg" />
+    <Content Include="Content\assets\img\trainers\cs dojo.jpg" />
+    <Content Include="Content\assets\img\trainers\mosh.jpg" />
+    <Content Include="Content\assets\img\trainers\netninja.jpeg" />
+    <Content Include="Content\assets\img\trainers\tiff inTech.jpg" />
     <Content Include="Content\assets\img\trainers\trainer-1.jpg" />
     <Content Include="Content\assets\img\trainers\trainer-2.jpg" />
     <Content Include="Content\assets\img\trainers\trainer-3.jpg" />
@@ -446,6 +450,7 @@
     <Content Include="Content\assets2\scss\bootstrap\scss\_type.scss" />
     <Content Include="Content\assets2\scss\bootstrap\scss\_utilities.scss" />
     <Content Include="Content\assets2\scss\bootstrap\scss\_variables.scss" />
+    <Content Include="Content\assets\img\trainers\tiff in tech.webp" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_HomePage.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
